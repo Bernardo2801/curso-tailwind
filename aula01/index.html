@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Text</title>
+</head>
+
+<body class="bg-zinc-800">
+
+    <h2 class="text-xs text-black">Hello world!</h2>
+    <h2 class="text-sm text-white">Hello world!</h2>
+    <hr>
+    <h2 class="text-base text-red-50">Hello world!</h2> <!--Tom minimo de vermelho (50)-->
+    <h2 class="text-lg text-red-400">Hello world!</h2>  <!--Tom mediano de vermelho (400)-->
+    <h2 class="text-lg text-red-950">Hello world!</h2>  <!--Tom maximo de vermelho (950)-->
+    <hr>
+    <h2 class="text-xl text-purple-50">Hello world!</h2>
+    <h2 class="text-2xl text-purple-400">Hello world!</h2>
+    <h2 class="text-9xl text-purple-950">Hello world!</h2>
+    <hr>
+    <!--
+    Todos essas classes servem para referênciar tamanhos da fonte.
+    A class "text-xl" tem como ser utilizada até "text-9xl"
+    Acesse: https://tailwindcss.com/docs/font-size 
+
+    Text-cor-tom exemplo text-purple-400 existem várias cores, ache de sua preferência:
+    https://tailwindcss.com/docs/customizing-colors
+    usando text-cor-tom você consegue alterar a cor de todos textos onde a class for aplicada.
+    -->
+
+    <p class="text-left text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem ipsa distinctio velit qui rerum dolorum labore maiores reprehenderit, natus, placeat, numquam eos iste consequuntur iure! Suscipit exercitationem minima temporibus?</p> <!-- Com essa tag text, você pode mover o paragrafo para a esquerda -->
+    <hr>
+    <p class="text-center text-white line-clamp-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ullam quis exercitationem distinctio, inventore quam dolorem voluptates, praesentium possimus quisquam harum magnam asperiores fuga, omnis sint cupiditate ut ipsa. Odio quaerat dolor ipsam amet! Possimus quis ut deserunt, odio tempore, quae repellendus enim neque harum nostrum nihil illum inventore quibusdam, eius numquam vitae. Consequatur, ad. Nihil suscipit illum qui alias quae! Veniam facere eos ad officiis reiciendis expedita ratione. Enim laudantium itaque minima sunt maxime dignissimos, necessitatibus voluptatem labore numquam? Dolor vitae harum similique omnis, voluptatum laudantium quidem placeat accusantium, rerum hic, eos enim! Sed odio in ad illum consequatur.</p> <!-- Com essa tag text, você pode mover o paragrafo para centro 
+    Já a tag 'line-clamp-3 você limita um texto dentro do espaço disponível até 3 linhas, pode ser usado de 1 até 6'-->
+    <hr>
+    <p class="text-justify text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem ipsa distinctio velit qui rerum dolorum labore maiores reprehenderit, natus, placeat, numquam eos iste consequuntur iure! Suscipit exercitationem minima temporibus?</p> <!-- Com essa tag text-position, você pode mover o paragrafo para a direita -->
+
+</body>
+
+</html>

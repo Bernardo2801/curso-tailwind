@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+
+    <!-- Link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Space Between</title>
+
+</head>
+<body class="m-4 bg-orange-300">
+    
+    <div class="flex space-x-4">
+        <div class="bg-violet-200">1</div>
+        <div class="bg-violet-200">2</div>
+        <div class="bg-violet-200">3</div>
+    </div>
+    <!-- Flex é a mudança do display, para algo flexível. Neste caso, como não tem um direcionamento ele ficará alinhado horizontalmente.
+    Já o space-x-4 é o space between, neste caso está atingindo somente o eixo x (horizontal), um espaçamento de 4 que equivale 16px. Espaça as div's horizontalmente com 16px de distancia horizontal.
+    -->
+
+    <br>  
+    
+    <div class="flex flex-col space-y-4 ...">
+        <div class="bg-violet-200">1</div>
+        <div class="bg-violet-200">2</div>
+        <div class="bg-violet-200">3</div>
+    </div>
+    <!-- Flex é a mudança do display, para algo flexível. Neste caso, tem um direcionamento 'flex-col', eles serão empilhados verticalmente um abaixo do outro. -->
+
+</body>
+</html> 

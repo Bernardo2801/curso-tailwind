@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bordas</title>
+
+</head>
+<body class="bg-neutral-700	">
+    
+    <div class="m-8 bg-violet-700 border-8 border-sky-500">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui quod natus temporibus. Iste quod, distinctio delectus amet aliquid sequi, tenetur voluptates veniam veritatis dolor assumenda? Qui similique ullam et.
+        </p>
+    </div>
+
+    <!-- Aqui o border-8 adiciona uma border width 8px, partindo de somente border border-0 até border-8 -->
+    <!-- Border-sky-500 também com base nas cores da documentação-->
+
+    <div class="m-8 bg-violet-700 border-x-8 border-sky-500">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui quod natus temporibus. Iste quod, distinctio delectus amet aliquid sequi, tenetur voluptates veniam veritatis dolor assumenda? Qui similique ullam et.
+        </p>
+    </div>
+
+    <!-- Aqui o border-x-8 adiciona uma border width 8px, somente nas bordas right and left -->
+
+    <div class="m-8 bg-violet-700 border-y-8 border-sky-500">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui quod natus temporibus. Iste quod, distinctio delectus amet aliquid sequi, tenetur voluptates veniam veritatis dolor assumenda? Qui similique ullam et.
+        </p>
+    </div>
+
+    <!-- Aqui o border-y-8 adiciona uma border width 8px, somente nas bordas top and bottom -->
+
+    <div class="m-8 p-4 border-r-2 border-sky-500">
+        <p class="text-right">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui quod natus temporibus. Iste quod, distinctio delectus amet aliquid sequi, tenetur voluptates veniam veritatis dolor assumenda? Qui similique ullam et.
+        </p>
+    </div>
+
+    <!-- Aqui o border-r-8 adiciona uma border width 8px, somente na right, mas pode ser aplicado com (L)eft, (B)ottom, (T)op -->
+
+    <div class="m-8 p-4 border-2 border-violet-400 rounded-xl">
+        <p class="text-right">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam qui quod natus temporibus. Iste quod, distinctio delectus amet aliquid sequi, tenetur voluptates veniam veritatis dolor assumenda? Qui similique ullam et.
+        </p>
+    </div>
+
+    <!-- Aqui o rounded-xl adiciona uma radius na borda, existe muitas outras formas de aplicação,
+    confira: https://tailwindcss.com/docs border-radius -->    
+
+    <div class="m-8 p-4 flex flex-col justify-center">
+        <input class="border-2 border-violet-600 max-w-[200px] mx-auto p-1" placeholder="Digite sua senha">
+        <button class="bg-white px-4 py-1 rounded text-black ring-2 ring-violet-600 max-w-[200px] mx-auto mt-4 hover:bg-violet-400">Save</button>
+    </div>
+
+
+</body>
+</html>

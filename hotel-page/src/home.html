@@ -10,8 +10,8 @@
 <body class="bg-gray-50 text-gray-600">
     
     <!-- header -->
-    <div class="bg-yellow-200">
-        <div class="container mx-auto px-4 h-24 flex items-center justify-between">
+    <div class="bg-sky-100">
+        <div class="container max-w-5xl mx-auto px-4 h-24 flex items-center justify-between">
             <div>
                 <a href="">
                     <img src="img/logo-techfarma-text.png" alt="Logo" class="w-44">
@@ -40,7 +40,7 @@
 
     <div style="background: url(/hotel-page/src/img/hero-image-1.png); height: 450px;">
 
-        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+        <div class="container max-w-5xl mx-auto px-4 h-full flex items-center justify-center">
             <div>
                 <div class="text-center">
                     <h1 class=" text-gray-200 text-6xl font-medium mb-2">Aonde você quer ir?</h1>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="mt-7">
-                    <form class="space-x-4">
+                    <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
                         <select class="inline-flex flex items-center bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
                             <option value="">Escolha o estado</option>
                         </select>
@@ -57,7 +57,7 @@
                             <option value="">Escolha a cidade</option>
                         </select>
 
-                        <button class="inline-flex flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                        <button class="col-span-2 lg:col-span-1 inline-flex flex items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
                             <svg class="w-4 h-3.5 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
                             </svg>
@@ -75,9 +75,9 @@
     <!-- featured resort -->
 
     <div>
-        <div class="container mx-auto px-4 py-10">
-            <div class="flex ">
-                <div class="pr-10">
+        <div class="container max-w-5xl mx-auto px-4 py-20">
+            <div class="flex flex-col-reverse lg:flex-row">
+                <div class="lg:pr-10">
                     <div class="text-sm text-gray-400 font-semibold">RESORT EM DESTAQUE</div>
                     <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
                     <div class="text-sm text-gray-400 font-normal">Hotel qualidade 5 estrelas</div>
@@ -97,8 +97,8 @@
                     </div>
                     
                 </div>
-                <div class="flex-shrink-0 ml-auto">
-                    <img src="/hotel-page/src/img/featured-img.png" alt="Ecoresort Praia do Forte Bahia" width="450">
+                <div class="flex-shrink-0 lg:ml-auto mb-5 lg:mb-0">
+                    <img src="/hotel-page/src/img/featured-img.png" alt="Ecoresort Praia do Forte Bahia" width="550" class="rounded-lg">
                 </div>
             </div>
         </div>
@@ -106,32 +106,89 @@
 
     <!-- /featured resort -->
 
-    <!-- resorts grid -->
+    <!-- Resorts Grid -->
     <div>
-        <div class="container mx-auto px-4">
+        <div class="container max-w-5xl mx-auto px-4">
             <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais resorts</h3>
+    
+            <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-6 md:h-96">
+                <div class="relative md:col-span-2 md:row-span-2 rounded-md overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Beach Park Resort
+                    </div>
+                    <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="./img/hotel-1.jpeg" class="w-full h-full object-cover object-center" alt="Resort 1">
+                </div>
+    
+                <div class="relative md:col-span-2 md:row-span-1 rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Salinas do Maragogi Resort
+                    </div>
+                    <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="./img/hotel-2.jpeg" class="w-full h-full object-cover object-center" alt="Resort 2">
+                </div>
+    
+                <div class="relative md:col-span-1 md:row-span-1 rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Grand Palladium
+                    </div>
+                    <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="./img/hotel-3.jpeg" class="w-full h-full object-cover object-center" alt="Resort 3">
+                </div>
+                
+                <div class="relative md:col-span-1 md:row-span-1 rounded-lg overflow-hidden">
+                    <div class="absolute bottom-0 pl-4 pb-4 text-white font-bold z-20">
+                        Arraial d'Ajuda Eco Resort
+                    </div>
+                    <img src="./img/image-shadow.png" class="absolute bottom-0 left-0 right-0 h-20 z-10">
+                    <img src="./img/hotel-4.jpeg" class="w-full h-full object-cover object-center" alt="Resort 4">
+                </div>
+            </div>
+        <!-- /Resorts Grid -->
+    
+        <!-- Form Search -->
+            <div class="py-20 md:order-2">
+                <div class="container max-w-5xl mx-auto px-4 flex justify-center">
+                    <form class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        <select class="inline-flex flex items-center bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                            <option value="">Escolha o estado</option>
+                        </select>
+    
+                        <select class="inline-flex flex items-center bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                            <option value="">Escolha a cidade</option>
+                        </select>
+    
+                        <button class="col-span-2 lg:col-span-1 inline-flex flex items-center justify-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                            <svg class="w-4 h-3.5 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                            </svg>
+                            Pesquisar resorts
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /Form Search -->
 
-            <div class="grid grid-cols-4 grid-rows-2 gap-6">
-                <div class="relative col-span-2 row-span-2 rounded-lg overflow-hidden">
-                    
-                    <img src="./img/hotel-1.jpeg" class="w-full h-full object-cover">
-                </div>
-                <div class="relative col-span-2  rounded-lg overflow-hidden">
-                    
-                    <img src="./img/hotel-2.jpeg" class="w-full h-full object-cover">
-                </div>
-                <div class="relative rounded-lg overflow-hidden h-40">
-                    
-                    <img src="./img/hotel-3.jpeg" class="w-full h-full object-cover">
-                </div>
-                <div class="relative rounded-lg overflow-hidden h-40">
-                    
-                    <img src="./img/hotel-4.jpeg" class="w-full h-full object-cover">
-                </div>
+    <!-- footer -->
+
+    <div class="border-t border-gray-200 bg-sky-100">
+        <div class="container max-w-5xl mx-auto flex items-center justify-between">
+            <div>
+                <a href="">
+                    <img src="img/logo-techfarma-text.png" alt="Logo" class="w-44">
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <a href=""><img src="/hotel-page/src/img/icon-facebook.png" alt=""></a>
+                <a href=""><img src="/hotel-page/src/img/icon-instagram.png" alt=""></a>
             </div>
         </div>
     </div>
-    <!-- /resorts grid -->
 
+    <!-- /footer -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,29 @@
 
     <title>Home</title>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-600">
     
     <!-- header -->
     <div class="bg-yellow-200">
         <div class="container mx-auto px-4 h-24 flex items-center justify-between">
-            <div class="font-black">
-                <img src="img/logo-techfarma-text.png" alt="Logo" class="max-sm:hidden">
+            <div>
+                <a href="">
+                    <img src="img/logo-techfarma-text.png" alt="Logo" class="w-44">
+                </a>
             </div>
 
-            <ul>
+            <ul class="flex items-center ml-auto space-x-3">
                 <li>
-                    <a href="/" class="text-2xl text-gray-600 hover:text-gray-800 hover:underline mr-5">Como reservar</a>
-                    <a href="/" class="text-2xl text-gray-600 hover:text-gray-800 hover:underline mr-5">Sobre nós</a>
-                    <a href="/" class="text-2xl text-gray-600 hover:text-gray-800 hover:underline mr-5">Informações</a>
-                    <a href="/" class="text-2xl text-gray-600 hover:text-gray-800 hover:underline mr-5">Contato</a>
+                    <a href="/" class="text-medium text-base text-gray-600 hover:text-gray-800 hover:underline">Como reservar
+                </li>
+                <li>
+                    <a href="/" class="text-medium text-base text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="/" class="text-medium text-base text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                </li>
+                <li>
+                    <a href="/" class="text-medium text-base text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
                 </li>
             </ul>
         </div>
@@ -30,15 +38,100 @@
 
     <!-- banner -->
 
-    <div>
-        <div
-            class="container mx-auto px-4"
-            style="background: url(img/hero-image-1.png);">
+    <div style="background: url(/hotel-page/src/img/hero-image-1.png); height: 450px;">
+
+        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+            <div>
+                <div class="text-center">
+                    <h1 class=" text-gray-200 text-6xl font-medium mb-2">Aonde você quer ir?</h1>
+                    <p class="text-green-100 text-xl">Escolha o estado e cidade para achar os melhores resorts.</p>
+                </div>
+
+                <div class="mt-7">
+                    <form class="space-x-4">
+                        <select class="inline-flex flex items-center bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                            <option value="">Escolha o estado</option>
+                        </select>
+
+                        <select class="inline-flex flex items-center bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500">
+                            <option value="">Escolha a cidade</option>
+                        </select>
+
+                        <button class="inline-flex flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                            <svg class="w-4 h-3.5 mr-2" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+                            </svg>
+                            
+                            Pesquisar resorts
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- /banner -->
 
+    <!-- featured resort -->
+
+    <div>
+        <div class="container mx-auto px-4 py-10">
+            <div class="flex ">
+                <div class="pr-10">
+                    <div class="text-sm text-gray-400 font-semibold">RESORT EM DESTAQUE</div>
+                    <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
+                    <div class="text-sm text-gray-400 font-normal">Hotel qualidade 5 estrelas</div>
+                    <div class="text-sm text-gray-400 font-normal mt-4">
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nisi, consectetur veniam dolorum enim cumque ea architecto a quam laboriosam exercitationem quaerat reiciendis at illum ducimus, voluptatibus rerum fuga. Beatae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat deserunt quas voluptates itaque earum praesentium dolores voluptas eligendi tempora esse, quidem nisi tenetur. Quae at neque, eos voluptatibus voluptatem corrupti.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="" class="inline-flex flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">
+                            Solicitar reserva
+
+                            <svg class="w-4 h-4 ml-3" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+                            </svg>
+                    </a>
+                    </div>
+                    
+                </div>
+                <div class="flex-shrink-0 ml-auto">
+                    <img src="/hotel-page/src/img/featured-img.png" alt="Ecoresort Praia do Forte Bahia" width="450">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /featured resort -->
+
+    <!-- resorts grid -->
+    <div>
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl text-gray-500 font-semibold text-center mb-8">Conheça mais resorts</h3>
+
+            <div class="grid grid-cols-4 grid-rows-2 gap-6">
+                <div class="relative col-span-2 row-span-2 rounded-lg overflow-hidden">
+                    
+                    <img src="./img/hotel-1.jpeg" class="w-full h-full object-cover">
+                </div>
+                <div class="relative col-span-2  rounded-lg overflow-hidden">
+                    
+                    <img src="./img/hotel-2.jpeg" class="w-full h-full object-cover">
+                </div>
+                <div class="relative rounded-lg overflow-hidden h-40">
+                    
+                    <img src="./img/hotel-3.jpeg" class="w-full h-full object-cover">
+                </div>
+                <div class="relative rounded-lg overflow-hidden h-40">
+                    
+                    <img src="./img/hotel-4.jpeg" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /resorts grid -->
 
 </body>
 </html>
